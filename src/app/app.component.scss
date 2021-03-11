@@ -1,0 +1,115 @@
+.card-body{
+    border-radius: 10px;
+    background-color: white;
+    margin: 70px;
+ }
+ .form-control{
+    border-radius: 30px;
+ }
+ .row{
+    margin: 50px;
+    border-radius: 10px;
+ 
+ }
+ 
+ @media screen and (max-width: 1000px) {
+    .card-body {
+        padding: 1px;
+        margin: 3px;
+        padding: 0px;
+    }
+    .row{
+        margin:10px;
+        font-size: smaller;
+        padding: 0px;
+    }
+  }
+ 
+
+
+
+.form-control-color{
+        display: grid;
+}
+small{
+    color: rgb(228, 35, 35);
+    margin-left: 7px;
+}
+select{
+    border-radius: 30px;
+   
+}
+.btn{
+    background-color: darkorchid;
+    border: none;
+    font-size: larger;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(/assets/calendar.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(/assets/calendar.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}
+input[type="month"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(/assets/calendar.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}
+input[type="week"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(/assets/calendar.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(/assets/clock.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}
+.input-group{
+    border: 0.5px solid #a7a3ca;
+    border-radius: 30px;
+    height: 40px;
+}
+.color-input input[type="color"]{
+    appearance: none;
+    border: none;
+    margin-top: 2px;
+    height: 35px;
+}
+ .input-group-text{
+        padding: 7px 0px 3px 9px;
+        background-color: white;
+        border: none;
+    }
+    .range, .input-group{
+        border: none;
+    }
+    .range, .input-group-text{
+        padding: 7px 5px 3px 9px;
+    }
+    
+    

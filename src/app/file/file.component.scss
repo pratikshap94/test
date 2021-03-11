@@ -1,0 +1,97 @@
+.card-body{
+    border-radius: 10px;
+    background-color: white;
+    margin: 50px;
+ }
+ .form-control{
+    border-radius: 30px;
+ }
+ .row{
+    margin: 50px;
+    border-radius: 10px;
+ 
+ }
+ 
+ @media screen and (max-width: 1000px) {
+    .card-body {
+        padding: 1px;
+        margin: 3px;
+        padding: 0px;
+    }
+    .row{
+        margin:10px;
+        font-size: smaller;
+        padding: 0px;
+    }
+  }
+
+  //files inputs of various size
+ .form-control-file{
+    border: 1px solid rgb(187, 174, 207);
+    padding: 0px;
+    height: 31.5%;
+}
+.form-control-sm {
+    height: 29%;
+}
+ .form-control-lg {
+    height: 38%;
+}
+
+
+//file input with label n button
+.group-file [type="file"], label {
+    position: relative; /* allows to position the custom boxes */
+    padding-left: 0em; 
+    font-size: 1em;
+    cursor: pointer; 
+}
+.group-file{
+    border: 1px solid rgb(187, 174, 207); 
+    width: 400%;
+    height: 39%;
+    
+}
+.group-file label{
+    font-size:130.5% ;
+    padding: 3px 5px 2px 5px;
+    margin: 0px 0px 0px 0px;
+    border: 1px solid rgb(187, 174, 207); 
+
+}
+.group-file input[type="file"]{
+    font-size: 130.5%;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid rgb(187, 174, 207); 
+height: 100%;}
+
+@media screen and (max-width: 1000px) {
+    .group-file{
+        border: 1px solid rgb(187, 174, 207); 
+        width: 100%;
+        height: 39%;
+        
+    }
+    .group-file label{
+        font-size:135.5%;
+        padding: 3px 5px 2px 5px;
+        margin: 0px 0px 0px 0px;
+        border: 1px solid rgb(187, 174, 207); 
+        height: 100%;
+        width: 45%;
+    
+    }
+    .group-file input[type="file"]{
+        font-size: 145.5%;
+        padding-left: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        border: 1px solid rgb(187, 174, 207); 
+    height: 100%;}
+    .btn{
+        height: 100%;
+        border-radius: 0px;
+    }
+    
+  }

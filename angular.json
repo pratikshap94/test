@@ -50,13 +50,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
+                  "maximumWarning": "3mb",
                   "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
+                  "maximumWarning": "10kb",
+                  "maximumError": "16kb"
                 }
               ]
             }
@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "task4"
+  "defaultProject": "task4",
+  "cli": {
+    "analytics": false
+  }
 }

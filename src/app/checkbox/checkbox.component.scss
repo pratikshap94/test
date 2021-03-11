@@ -1,0 +1,437 @@
+.card-body{
+    border-radius: 10px;
+    background-color: white;
+    margin: 50px;
+ }
+ .form-control{
+    border-radius: 30px;
+ }
+ .row{
+    margin: 50px;
+    border-radius: 10px;
+ 
+ }
+ 
+ @media screen and (max-width: 1000px) {
+    .card-body {
+        padding: 1px;
+        margin: 3px;
+        padding: 0px;
+    }
+    .row{
+        margin:10px;
+        font-size: smaller;
+        padding: 0px;
+    }
+  }
+ 
+
+
+.form-control{
+    border-radius: 30px;
+}
+
+
+
+
+/* Unchecked aspect for checkboxes */
+   [type="checkbox"]:not(:checked) + label::after {
+	opacity: 0;
+	// transform: scale(0) rotate(45deg);
+}
+
+/* Checked aspect for checkboxes*/
+[type="checkbox"]:checked + label::after {
+	opacity: 1;
+	// transform: scale(1) rotate(0);
+}
+
+
+// Right-checkbox
+.right input[type="checkbox"]{
+    position: absolute;
+	left: 0;
+    opacity: 0.01;}
+    
+    .right [type="checkbox"] label {
+        position: relative; /* allows to position the custom boxes */
+        padding-left: 0em; /* room for upcoming boxes */
+        font-size: 1em;
+        line-height: 1.4;
+        cursor: pointer; 
+   }
+   .right [type="checkbox"]:not(:checked) + label::before,.right
+   [type="checkbox"]:checked + label::before {
+       content: '';
+       position: absolute;
+       left: 11em;
+       top: 0.44em;
+       width: 1.23em;
+       height: 1.23em;
+       border: 2px solid rgb(33, 3, 88) ;
+       background: rgb(33, 3, 88);
+       border-radius: .2em;
+       box-shadow: inset 0 1px 3px rgba(0,0,0, .1), 0 0 0 rgba(203, 34, 237, .2);
+       transition: all .275s;
+   }
+   /* Check aspect */
+.right [type="checkbox"]:not(:checked) + label::after,
+.right [type="checkbox"]:checked + label::after {
+	content: '\2713';
+	speak: never; /* To be sure screen reader won't read "times" */
+	position: absolute;
+	top: .99em;
+	left: 11.37em;
+    font-weight: bold;
+	font-size: 0.98em;
+	color: #fdfbfb;
+	line-height: 0;
+	transition: all .2s; /* Little transition */
+}
+
+// Common css for all checkboxes
+.primary input[type="checkbox"],.success input[type="checkbox"],.info input[type="checkbox"],.warning input[type="checkbox"],.danger input[type="checkbox"]{
+    position: absolute;
+	left: 0;
+	opacity: 0.01;}
+
+.primary [type="checkbox"] + label,.success [type="checkbox"] + label,.info [type="checkbox"] + label,.warning [type="checkbox"] + label,.danger [type="checkbox"] + label {
+ 	position: relative; /* allows to position the custom boxes */
+ 	padding-left: 1.28em; /* room for upcoming boxes */
+ 	font-size: 1em;
+ 	line-height: 1.7;
+ 	cursor: pointer; 
+}
+
+// Primary-checkbox
+.primary [type="checkbox"]:not(:checked) + label::before,.primary
+[type="checkbox"]:checked + label::before {
+	content: '';
+	position: absolute;
+	left: 0;
+    top: 0.44em;
+	width: 1.23em;
+	height: 1.23em;
+    background: rgb(33, 3, 88);
+	border-radius: .2em;
+	box-shadow: inset 0 1px 3px rgba(0,0,0, .1), 0 0 0 rgba(203, 34, 237, .2);
+	transition: all .275s;
+}
+
+/* Check aspect */
+.primary [type="checkbox"]:not(:checked) + label::after,
+.primary [type="checkbox"]:checked + label::after {
+	content: '\2713';
+	speak: never; /* To be sure screen reader won't read "times" */
+	position: absolute;
+	top: 1.03em;
+    left: .18em;
+    font-weight: bold;
+	font-size: 0.98em;
+	color: #f8fafa;
+	line-height: 0;
+	transition: all .2s; /* Little transition */
+}
+
+
+// success-checkbox
+
+.success [type="checkbox"]:not(:checked) + label::before,.success
+[type="checkbox"]:checked + label::before {
+	content: '';
+	position: absolute;
+	left: 0;
+    top: 0.44em;
+	width: 1.23em;
+	height: 1.23em;
+    background: rgb(7, 88, 4);
+	border-radius: .2em;
+	box-shadow: inset 0 1px 3px rgba(0,0,0, .1), 0 0 0 rgba(203, 34, 237, .2);
+	transition: all .275s;
+}
+
+/* Check aspect */
+.success [type="checkbox"]:not(:checked) + label::after,
+.success [type="checkbox"]:checked + label::after {
+	content: '\2713';
+	speak: never; /* To be sure screen reader won't read "times" */
+	position: absolute;
+	top: 1.03em;
+    left: .18em;
+    font-weight: bold;
+	font-size: 0.98em;
+	color: #f8fafa;
+	line-height: 0;
+	transition: all .2s; /* Little transition */
+}
+
+// info-checkbox
+
+.info [type="checkbox"]:not(:checked) + label::before,.info
+[type="checkbox"]:checked + label::before {
+	content: '';
+	position: absolute;
+	left: 0;
+    top: 0.44em;
+	width: 1.23em;
+	height: 1.23em;
+    background: rgb(74, 66, 179);
+	border-radius: .2em;
+	box-shadow: inset 0 1px 3px rgba(0,0,0, .1), 0 0 0 rgba(203, 34, 237, .2);
+	transition: all .275s;
+}
+
+/* Check aspect */
+.info [type="checkbox"]:not(:checked) + label::after,
+.info [type="checkbox"]:checked + label::after {
+	content: '\2713';
+	speak: never; /* To be sure screen reader won't read "times" */
+	position: absolute;
+	top: 1.03em;
+    left: .18em;
+    font-weight: bold;
+	font-size: 0.98em;
+	color: #f8fafa;
+	line-height: 0;
+	transition: all .2s; /* Little transition */
+}
+
+
+
+// Warning-checkbox
+
+.warning [type="checkbox"]:not(:checked) + label::before,.warning
+[type="checkbox"]:checked + label::before {
+	content: '';
+	position: absolute;
+	left: 0;
+    top: 0.44em;
+	width: 1.23em;
+	height: 1.23em;
+    background: rgb(231, 153, 9);
+	border-radius: .2em;
+	box-shadow: inset 0 1px 3px rgba(0,0,0, .1), 0 0 0 rgba(203, 34, 237, .2);
+	transition: all .275s;
+}
+
+/* Check aspect */
+.warning [type="checkbox"]:not(:checked) + label::after,
+.warning [type="checkbox"]:checked + label::after {
+	content: '\2713';
+	speak: never; /* To be sure screen reader won't read "times" */
+	position: absolute;
+	top: 1.03em;
+    left: .18em;
+    font-weight: bold;
+	font-size: 0.98em;
+	color: #f8fafa;
+	line-height: 0;
+	transition: all .2s; /* Little transition */
+}
+
+
+
+// Danger-checkbox
+
+   .danger [type="checkbox"]:not(:checked) + label::before,.danger
+   [type="checkbox"]:checked + label::before {
+       content: '';
+       position: absolute;
+       left: 0;
+       top: 0.44em;
+       width: 1.23em;
+	   height: 1.23em;
+       background: rgb(231, 35, 9);
+       border-radius: .2em;
+       box-shadow: inset 0 1px 3px rgba(0,0,0, .1), 0 0 0 rgba(203, 34, 237, .2);
+       transition: all .275s;
+   }
+   /* Check aspect */
+.danger [type="checkbox"]:not(:checked) + label::after,
+.danger [type="checkbox"]:checked + label::after {
+	content: '\2713';
+	speak: never; /* To be sure screen reader won't read "times" */
+	position: absolute;
+	top: 1.03em;
+    left: .18em;
+    font-weight: bold;
+	font-size: 0.98em;
+	color: #f8fafa;
+	line-height: 0;
+	transition: all .2s; /* Little transition */
+}
+
+// Outline-Primary-checkbox
+.outline-primary input[type="checkbox"], .outline-success input[type="checkbox"],.outline-info input[type="checkbox"],.outline-warning input[type="checkbox"],.outline-danger input[type="checkbox"]{
+    position: absolute;
+	left: 0;
+    opacity: 0.01;}
+    
+    .outline-primary [type="checkbox"] + label,.outline-success [type="checkbox"] + label,.outline-info [type="checkbox"] + label,.outline-warning [type="checkbox"] + label,.outline-danger [type="checkbox"] + label {
+        position: relative; /* allows to position the custom boxes */
+        padding-left: 1.38em; /* room for upcoming boxes */
+        font-size: 1em;
+        line-height: 1.4;
+        cursor: pointer; 
+   }
+   .outline-primary [type="checkbox"]:not(:checked) + label::before,.outline-primary
+   [type="checkbox"]:checked + label::before {
+       content: '';
+       position: absolute;
+       left: 0;
+       top: 0.44em;
+       width: 0.83em;
+       height: 0.83em;
+       border: 2px solid rgb(33, 3, 88) ;
+       background: rgb(247, 245, 244);
+       border-radius: .2em;
+       box-shadow: inset 0 1px 3px rgba(0,0,0, .1), 0 0 0 rgba(203, 34, 237, .2);
+       transition: all .275s;
+   }
+   /* Check aspect */
+.outline-primary [type="checkbox"]:not(:checked) + label::after,
+.outline-primary [type="checkbox"]:checked + label::after {
+	content: '\2713';
+	speak: never; /* To be sure screen reader won't read "times" */
+	position: absolute;
+	top: .60em;
+	left: .15em;
+    font-size: 1.07em;
+    font-weight: bold;
+	color: #0c0c0c;
+	line-height: 0;
+	transition: all .2s; /* Little transition */
+}
+
+// Outline-success-checkbox
+    
+   .outline-success [type="checkbox"]:not(:checked) + label::before,.outline-success
+   [type="checkbox"]:checked + label::before {
+       content: '';
+       position: absolute;
+       left: 0;
+       top: 0.44em;
+       width: 0.83em;
+       height: 0.83em;
+       border: 2px solid rgb(7, 88, 4) ;
+       background: rgb(247, 245, 244);
+       border-radius: .2em;
+       box-shadow: inset 0 1px 3px rgba(0,0,0, .1), 0 0 0 rgba(203, 34, 237, .2);
+       transition: all .275s;
+   }
+   /* Check aspect */
+.outline-success [type="checkbox"]:not(:checked) + label::after,
+.outline-success [type="checkbox"]:checked + label::after {
+	content: '\2713';
+	speak: never; /* To be sure screen reader won't read "times" */
+	position: absolute;
+	top: .6em;
+	left: .15em;
+    font-size: 1em;
+    font-weight: bold;
+	color: #0c0c0c;
+	line-height: 0;
+	transition: all .2s; /* Little transition */
+}
+
+// Outline-info-checkbox
+
+    
+   
+   .outline-info [type="checkbox"]:not(:checked) + label::before,.outline-info
+   [type="checkbox"]:checked + label::before {
+       content: '';
+       position: absolute;
+       left: 0;
+       top: 0.44em;
+       width: 0.83em;
+       height: 0.83em;
+       border: 2px solid rgb(74, 66, 179) ;
+       background: rgb(247, 245, 244);
+       border-radius: .2em;
+       box-shadow: inset 0 1px 3px rgba(0,0,0, .1), 0 0 0 rgba(203, 34, 237, .2);
+       transition: all .275s;
+   }
+   /* Check aspect */
+.outline-info [type="checkbox"]:not(:checked) + label::after,
+.outline-info [type="checkbox"]:checked + label::after {
+	content: '\2713';
+	speak: never; /* To be sure screen reader won't read "times" */
+	position: absolute;
+	top: .6em;
+	left: .15em;
+    font-size: 1em;
+    font-weight: bold;
+	color: #0c0c0c;
+	line-height: 0;
+	transition: all .2s; /* Little transition */
+}
+
+// Outline-warning-checkbox
+
+    
+    
+   .outline-warning [type="checkbox"]:not(:checked) + label::before,.outline-warning
+   [type="checkbox"]:checked + label::before {
+       content: '';
+       position: absolute;
+       left: 0;
+       top: 0.44em;
+       width: 0.83em;
+       height: 0.83em;
+       border: 2px solid rgb(231, 153, 9);
+       background: rgb(247, 245, 244);
+       border-radius: .2em;
+       box-shadow: inset 0 1px 3px rgba(0,0,0, .1), 0 0 0 rgba(203, 34, 237, .2);
+       transition: all .275s;
+   }
+   /* Check aspect */
+.outline-warning [type="checkbox"]:not(:checked) + label::after,
+.outline-warning [type="checkbox"]:checked + label::after {
+	content: '\2713';
+	speak: never; /* To be sure screen reader won't read "times" */
+	position: absolute;
+	top: .6em;
+	left: .15em;
+    font-size: 1em;
+    font-weight: bold;
+	color: #0c0c0c;
+	line-height: 0;
+	transition: all .2s; /* Little transition */
+}
+
+
+// Outline-Danger-checkbox
+
+    
+   
+   .outline-danger [type="checkbox"]:not(:checked) + label::before,.outline-danger
+   [type="checkbox"]:checked + label::before {
+       content: '';
+       position: absolute;
+       left: 0;
+       top: 0.44em;
+       width: 0.83em;
+       height: 0.83em;
+       border: 2px solid rgb(231, 35, 9) ;
+       background: rgb(247, 245, 244);
+       border-radius: .2em;
+       box-shadow: inset 0 1px 3px rgba(0,0,0, .1), 0 0 0 rgba(203, 34, 237, .2);
+       transition: all .275s;
+   }
+   /* Check aspect */
+.outline-danger [type="checkbox"]:not(:checked) + label::after,
+.outline-danger [type="checkbox"]:checked + label::after {
+	content: '\2713';
+	speak: never; /* To be sure screen reader won't read "times" */
+	position: absolute;
+	top: .6em;
+	left: .15em;
+    font-size: 1em;
+    font-weight: bold;
+	color: #0c0c0c;
+	line-height: 0;
+	transition: all .2s; /* Little transition */
+}
+
+

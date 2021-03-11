@@ -1,0 +1,77 @@
+<!-- Switch -->
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Switches</h4>
+                <p class="card-title-desc">A switch has the markup of a custom checkbox but uses the <code>.form-switch</code> class to render a toggle switch. Switches also support the <code>disabled</code> attribute.</p>
+
+                <div class="row">
+
+                    <div class="col-sm-6">
+                        <div>
+                            <h5 class="font-size-14 mb-3">Switch examples</h5>
+
+                            <div class="custom-control custom-switch mb-3">
+                                <input class="custom-control-input" type="checkbox" id="flexSwitchCheckDefault">
+                                <label class="custom-control-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                            </div>
+                            <div class="custom-control custom-switch mb-3">
+                                <input class="custom-control-input" type="checkbox" id="flexSwitchCheckChecked" checked="">
+                                <label class="custom-control-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                            </div>
+                            <div class="custom-control custom-switch mb-3">
+                                <input class="custom-control-input" type="checkbox" id="flexSwitchCheckDisabled" disabled="">
+                                <label class="custom-control-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input class="custom-control-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked="" disabled="">
+                                <label class="custom-control-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-sm-6">
+                        <div class="mt-4 mt-sm-0">
+                            <h5 class="font-size-14 mb-3">Switch sizes</h5>
+
+                            <div class="custom-control custom-switch  mb-3">
+                                <input class="custom-control-input switch-small" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked="" >
+                                <label class="custom-control-label" for="flexSwitchCheckCheckedDisabled">Small switch</label>
+                            </div>
+
+                            <div class="custom-control custom-switch medium mb-3" dir="ltr">
+                                <input class="custom-control-input" type="checkbox" id="SwitchCheckSizelg" checked="">
+                                <label class="custom-control-label" for="SwitchCheckSizelg">Medium Size Switch</label>
+                            </div>
+
+                            <div class="custom-control custom-switch large mb-3" dir="ltr">
+                                <input class="custom-control-input" type="checkbox" id="SwitchCheckSizelg" checked="">
+                                <label class="custom-control-label" for="SwitchCheckSizelg">Large Size Switch</label>
+                            </div>
+                            <div class="mt-8">
+                                <label class="switch">
+                                    <input type="checkbox" id="togBtn">
+                                    <div class="slider round">
+                                        <!--ADDED HTML -->
+                                        <span class="on">{{on}}</span>
+                                        <span class="off">{{off}}</span>
+                                        <!--END-->
+                                    </div>
+                                </label>
+
+                            </div>
+                        </div>
+                    </div> 
+
+                    
+
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- end col -->
+</div>
